@@ -44,6 +44,9 @@ public class PartidaXadrez {
 	if(!tabuleiro.verificarPeca(pinicial)) {
 		throw new XadrezExceptions("Não existe peça na posição de origem");
 	}
+	if(!tabuleiro.peca(pinicial).movimentoPossivel(pinicial)) {
+		throw new  XadrezExceptions("Não há movimentos possiveis.");
+	}
 		
 	}
 
