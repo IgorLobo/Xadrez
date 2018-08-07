@@ -1,13 +1,13 @@
 package boardgame;
 
-public class BoardExecptions extends RuntimeException {
+public class BoardExceptions extends RuntimeException {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public BoardExecptions(String msg) {
+	public BoardExceptions(String msg) {
 		super(msg);
 	}
 	
