@@ -20,6 +20,10 @@ public class Programa {
 			System.out.println("\nPeça:");
 			PosicaoXadrez posInicial = UI.verificarPosicaoXadrez(sc);
 			
+			boolean[][] movimentosPossiveis = partida.movimentosPossiveis(posInicial);
+			UI.limparTela();
+			UI.imprimaTabuleiro(partida.getPecas(), movimentosPossiveis);
+			
 			System.out.println("\nAlvo:");
 			PosicaoXadrez posFinal = UI.verificarPosicaoXadrez(sc);
 			
