@@ -16,7 +16,7 @@ public class Programa {
 		while(true) {
 		try {
 			UI.limparTela();
-			UI.imprimaTabuleiro(partida.getPecas());
+			UI.imprimaPartida(partida);
 			System.out.println("\nPeça:");
 			PosicaoXadrez posInicial = UI.verificarPosicaoXadrez(sc);
 			
@@ -31,10 +31,12 @@ public class Programa {
 		}
 		catch(XadrezExceptions e){
 			System.out.println(e.getMessage());
+			System.out.println("Pressione ENTER para prosseguir.");
 			sc.nextLine();
 		}
 		catch(InputMismatchException e){
 			System.out.println(e.getMessage());
+			System.out.println("Pressione ENTER para prosseguir.");
 			sc.nextLine();
 		}
 
